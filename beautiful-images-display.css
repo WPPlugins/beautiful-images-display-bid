@@ -1,0 +1,59 @@
+#beautiful-overlay {
+	position: fixed;
+	background-color: rgba(0,0,0,0.75);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 99;
+}
+
+#beautiful-img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 10px solid #FFF;
+	display: block;
+	margin: 0 auto;
+	z-index: 100;
+	padding: 1px;
+	background-color: #dcdcdc;
+}
+
+#closebtn {
+	position: absolute;
+	color: rgb(255, 255, 255);
+	z-index: 101;
+	font-size: 16px;
+	font-weight: bold;
+	border: 5px solid rgb(255, 255, 255);
+	border-radius: 50%;
+	padding: 0px 8px;
+	background-color: #07a;
+	cursor: pointer;
+	font-family: roboto, droid sans, sans;
+}
+
+#backbtn, #forwardbtn {
+	position: absolute;
+	color: rgb(255, 255, 255);
+	z-index: 101;
+	font-size: 18px;
+	font-weight: bold;
+	border: 5px solid #FFF;
+	border-radius: 50%;
+	padding: 0px 8px;
+	background-color: #07a;
+	cursor: pointer;
+	display: none;
+	font-family: open sans, sans;
+}
+
+#beautiful-img-cont:hover #backbtn, #beautiful-img-cont:hover #forwardbtn {
+	display: block;
+}
+
+#closebtn:hover, #backbtn:hover, #forwardbtn:hover {
+	background-color: #09c;
+}
